@@ -12,4 +12,4 @@ jobs:
     - name: make
       run: make fnmatch
     - name: test
-      run: test `ls -1 | fnmatch '*.c' | wc -l ` = 1
+      run: test `ls -1 | ./fnmatch '*.c' | wc -l ` = 1
