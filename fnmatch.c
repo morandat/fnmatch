@@ -4,10 +4,13 @@
 #include <stdlib.h>
 
 #define SYNTAX  "fnmatch [-v] [-i input] [-o output] [-f patterns]* patterns*"
-#define HELP    "[-v|-r]       Invert match. Selected lines are those not matching any of the specified patterns.\n" \
-                "[-i input]    Read <input> file instead of stdin\n"            \
-                "[-o input]    Write to <output> file instead of stdout\n"      \
-                "[-f file]     Read patterns from <file>. May be used more than once\n"
+#define HELP    \
+"[-v|-r]       Invert match. Selected lines are those not matching any of the\n" \
+"              specified patterns.\n"                                            \
+"[-i input]    Read <input> file instead of stdin.\n"                            \
+"[-o input]    Write to <output> file instead of stdout.\n"                      \
+"[-f file]     Read patterns from <file>. May be used more than once.\n"         \
+
 #define LINES_INCREMENT 100
 
 struct lines {
