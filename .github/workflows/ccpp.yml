@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: make
-      run: make fnmatch
+      run: make
     - name: test
-      run: test `ls -1 | ./fnmatch '*.c' | wc -l ` = 1
+      run: make test
